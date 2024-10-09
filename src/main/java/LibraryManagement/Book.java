@@ -1,9 +1,9 @@
 package LibraryManagement;
 
-public class Book {
+public final class Book {
     
-    private String author, title, genre;
-    private double price;
+    private final String author, title, genre;
+    private final double price;
     
     public Book(String author, String title, String genre, double price){
         this.author = author;
@@ -24,22 +24,4 @@ public class Book {
     public double getPrice(){
         return this.price;
     }
-    
-    public void setAuthor(String author){
-        this.author = author;
-    }
-    
-    public void setTitle(String title){
-        this.title = title;
-    }
-    
-    public void setGenre(String genre){
-        this.genre = genre;
-    }
-    
-    public void setPrice(double price){
-        this.price = price;
-    }
-    
-    
 }
